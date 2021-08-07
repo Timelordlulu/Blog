@@ -1,0 +1,6 @@
+- title: Email
+  url: mailto://cunyuan2@illinois.edu
+  icon: fas fa-envelope
+- title: GitHub
+  url: https://github.com/Timelordlulu
+  icon: fab fa-github
