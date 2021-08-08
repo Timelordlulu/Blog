@@ -22,7 +22,7 @@ SimpleDB consists of:
 This article will focus on the storage part of the database, including the implementation of classes to manage tuples, and how BufferPool, HeapFile, and HeapPage interact with these classes.   
 
 ## Class Diagram 
-![Class-Diagram](https://timelordlulu.github.io/blog/images/SimpleDB-Storage.jpg){:class="align-center"}
+![Class-Diagram](/images/SimpleDB-Storage.jpg){:class="align-center"}
 
 **TupleDesc**: Table schema   
 **Tuple**: Rows of the table  
