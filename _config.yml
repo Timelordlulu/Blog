@@ -1,11 +1,11 @@
 # Setup
 title: Cunyuan's Blog
 description: A Student at UIUC
-url: https://timelordlulu.github.io/blog/
-avatar: /avatar.JPG
+url: https://timelordlulu.github.io/
+avatar: images/avatar.JPG
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: images/bg.jpeg
 
 # Gems
 plugins:
