@@ -5,7 +5,7 @@ date: 2021-07-24
 tags: [SimpleDB]
 toc:  true
 ---
-Lab Assignment from MIT 6.830. See <http://dsg.csail.mit.edu/6.830/>
+Lab Assignment part 1. From MIT 6.830. See <http://dsg.csail.mit.edu/6.830/>
 {: .message }
 
 ## Introduction    
