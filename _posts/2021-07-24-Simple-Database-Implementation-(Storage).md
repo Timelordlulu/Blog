@@ -33,12 +33,14 @@ This article will focus on the storage part of the database, including the imple
 **LogFile**: Log records include "ABORT", "COMMIT", "UPDATE", "BEGIN", "CHECKPOINT".   
 
 ## Reflection
+### Iterators
 One of the most important lessons I got from this lab is the design of Iterators. When implementing Iterators, we normally need to overide open(), hasNext(), next(), close() and rewind().    
 
 The key point of `HeapPage` iterator is to check if the slot is used or not, which can be done by bit manipulation of the header bitmap.    
 
 Since `HeapFile` is the collection of `HeapPages`, we can use `HeapPage` iterator to implement `HeapFile` iterator. The only situation that matters is when we reach the end of the page, we need to check if there are more pages.   
 
+### Serialization
 This lab also gives me an opportunity to learn about serialization in Java. Many classes in the lab implements `Serializable`, including `Tuple` and `TupleDesc`. Serialization enables them to convert from the state of an object into a byte stream. For example, using the codes below, we can save an object of it to a local file and then read this value back in. 
 ```
 Tuple t = new Tuple();

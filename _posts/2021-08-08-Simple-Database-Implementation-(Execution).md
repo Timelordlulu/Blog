@@ -27,6 +27,7 @@ When implementing `aggregate` function, we need to do it case-by-case. If the fi
 ## Reflection  
 Operators are the basic functions of a database, but they are also extremely important. Designing efficient and extendable operators will largely increase the speed of the database. I will talk about the design of `Join` and `Aggregate` operators here.   
 
+### Join
 I implemented `join` using Nested Loop Joins, which is the most simple but more costing way of join algorithm. The principle is simple as the pseudocode below:   
 ```
 // Nested Loop Joins
@@ -61,7 +62,7 @@ If joinBuffer is not empty {
     }
 }
 ```
-
+### Aggregate
 Next, it's time to talk about `Aggregate` operater. The key point of it is to handle Integeger Aggregator as there are many different commands to take care of. I used a Hashmap with field as key, and an array list of integer as value to help implement the `mergeTupleIntoGrouop` function. When we iterate to a new row, we can store both the count and the sum in the array list. For example, here is a table.     
 <table>
     <thead>
@@ -88,6 +89,7 @@ Next, it's time to talk about `Aggregate` operater. The key point of it is to ha
 
 If the command is grouping by name and returning the sum/average, our hashmap changes from {Score : [1, 90]} to  {Score : [2, 185]} and to {Score : [3, 285]}. By this method, we can easily return the average by dividing the two numbers in the list. Similarly, if we are asked to return the min/max, the second element in the array list will be the temporary min/max.
 
+### Page Eviction 
 Besides operaters, another task in this lab is to design a page eviction strategy for the `BufferPool`. Old pages need to be removed from the bufferpool so that new pages can be cached. I stored a list of `HeapPage` in the `BufferPool` calss. To evict a page, I will iterate through the list to find a non-dirty page and write it to the disk. However, this is not an efficient way because looping through the list is highly-costing. One fancy way is called LRU Cache. [See more information here.](https://en.wikipedia.org/wiki/Cache_replacement_policies)
 
 ## Credits  
