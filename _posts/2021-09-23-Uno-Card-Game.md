@@ -26,29 +26,29 @@ Uno Game using JAVA
 
 ### Test Set Player Number
 Description: This is the first page. User should enter a number to indicate the number of players in this game.   
-![img](/imgs/setPlayerCnt1.png)
+![img](/images/setPlayerCnt1.png)
 
 Test 1.1 When the total player count is smaller than 2   
 Test result: Success. A warning message appears and let the user re-enter.  
-![img](/imgs/setPlayerCnt2.png)   
+![img](/images/setPlayerCnt2.png)   
 
 Test 1.2 - Enter non-number characters   
 Test result: Success. A warning message appears and let the user re-enter.  
-![img](/imgs/setPlayerCnt3.png)
+![img](/images/setPlayerCnt3.png)
 
 Test 1.3 - Enter one human player, zero baseline AI, and one strategic AI.   
 Test result: Success. Enter the next stage - Set player Name.  
-![img](/imgs/setPlayerCnt4.png)   
+![img](/images/setPlayerCnt4.png)   
 
 
 ### Test Set Player Name
 Description: This is the second page. After the user entered the player numbers on last page, there will appear
 corresponding text fields for user to enter their names.   
-![img](/imgs/setPlayerName1.png)
+![img](/images/setPlayerName1.png)
 
 Test 2.1 - Enter the name "abc".   
 Test result - Success. Enter the next stage - Game stage.    
-![img](/imgs/setPlayerName2.png)
+![img](/images/setPlayerName2.png)
 
 ### Test Game Stage Page
 Description: This is the third page. Game starts. In the upper side of the page, it shows the current player. 
@@ -58,46 +58,46 @@ and buttons like "hide", "draw", "play", and "skip".
 #### Test 3.1 - AI's turn.  
 Test 3.1.1 - Interface   
 Test result - Success. Not able to see AI's hands.       
-![img](/imgs/gameStage1.png)   
+![img](/images/gameStage1.png)   
 
 Test 3.1.2 - Click the "next turn" button    
 Test result - Success. Show AI's action and go to next round.   
-![img](/imgs/gameStage2.png)   
+![img](/images/gameStage2.png)   
 
 #### Test 3.2 - Player's turn.  
 Test 3.2.1 - Interface   
 Test result - Success. Not able to see player's hands.    
-![img](/imgs/gameStage3.png)   
+![img](/images/gameStage3.png)   
 
 Test 3.2.2 - Clicking the "reveal/hide" button   
 Test result - Success. Show Player's hand.   
-![img](/imgs/gameStage4.png)   
+![img](/images/gameStage4.png)   
 
 Test 3.2.3 - Choosing cards     
 Test result - Success. Chosen cards are highlighted by green borders.   
-![img](/imgs/gameStage5.png)    
+![img](/images/gameStage5.png)    
 
 Test 3.2.4 - Playing invalid card    
 Test result - Success. A warning message appears.   
-![img](/imgs/gameStage6.png)  
-![img](/imgs/gameStage14.png)
+![img](/images/gameStage6.png)  
+![img](//images/gameStage14.png)
 
 Test 3.2.5 - Playing valid card   
 Test result - Success. It turns to AI's round.    
-![img](/imgs/gameStage9.png)      
+![img](/images/gameStage9.png)      
 
 #### Test 3.3 - Skip round. 
 Test 3.3.1 - Human player being skipped   
 Test result - Success. Not able to click any button except for "skip".   
-![img](/imgs/gameStage13.png)    
+![img](/images/gameStage13.png)    
 
 Test 3.3.2 - AI player being skipped     
 Test result - Success. AI player is skipped.      
-![img](/imgs/gameStage11.png)   
+![img](/images/gameStage11.png)   
 
 Test 3.3.3 - Human player not being skipped    
 Test result - Success. Not able to click the "skip" button.    
-![img](/imgs/gameStage7.png)   
+![img](/images/gameStage7.png)   
 
 
 ### Test Choose Color Page
@@ -106,26 +106,26 @@ declare a new color.
 
 Test 4.1 - Human player played WILD DRAW FOUR    
 Test result - Success. Need to Claim color and game stat changes to new color.     
-![img](/imgs/gameStage8.png)     
-![img](/imgs/gameStage10.png)    
+![img](/images/gameStage8.png)     
+![img](/images/gameStage10.png)    
 ### Test Custom Rule
 Description: Addition and Subtraction Rules.     
 
 Test 5.1 - Invalid cards    
 Test result - Success. Not able to play them.    
-![img](/imgs/gameStage12.png)
+![img](/images/gameStage12.png)
 
 Test 5.2 - valid cards    
 Test result - Success. Able to play them.   
-![img](/imgs/gameStage15.png)   
+![img](/images/gameStage15.png)   
 
 ### Test Game Ending Page  
 Description: This is the final page. Winner's information will be showed on this page.   
 
 Test 6.1 - Interface    
 Test result - Success.    
-![img](/imgs/gameEnding1.png)
+![img](/images/gameEnding1.png)
 
 Test 6.2 - Clicking "Restart" button    
 Test result - Success. Going to the first page.      
-![img](/imgs/gameEnding2.png)      
+![img](/images/gameEnding2.png)      
