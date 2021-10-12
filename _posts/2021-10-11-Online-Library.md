@@ -2,6 +2,7 @@
 layout: post
 title: Online Library
 date: 2021-10-11
+<<<<<<< HEAD
 tags: [Web-APP]
 toc:  true
 ---
@@ -42,6 +43,7 @@ npm start
 
 ### Test GET  
 Test 1.1 Search Valid Book       
+<<<<<<< HEAD
 ![img](/images/1.1.jpg)     
 Result: showing the correct book    
 
@@ -67,6 +69,7 @@ Result: showing author info in the right side of the page
 
 ### Test PUT
 Test 2.1 Update a book   
+<<<<<<< HEAD
 ![img](/images/2.1.1.jpg)   
 ![img](/images/2.1.2.jpg)   
 Result: Successfully update    
@@ -86,6 +89,7 @@ Result: Update failed
 
 ### Test POST 
 Test 3.1 Add a book    
+<<<<<<< HEAD
 ![img](/images/3.1.1.jpg)  
 ![img](/images/3.1.2.jpg)     
 Result: Successfully Add   
@@ -122,6 +126,7 @@ Result: Successfully Delete
 
 ### Test Ranking
 Test 5.1 Test Book Ranking - Top 3   
+<<<<<<< HEAD
 ![img](/images/5.1.jpg)   
 Result: Successfully render the bar chart   
 
@@ -139,6 +144,7 @@ Result: Successfully render the bar chart
 
 ### Test Phone Screen
 Test 6.1 Test Navigation Bar  
+<<<<<<< HEAD
 ![img](/images/6.1.jpg)  
 Result: Collapse to fit the screen   
 
