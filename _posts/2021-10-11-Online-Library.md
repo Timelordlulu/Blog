@@ -2,7 +2,7 @@
 layout: post
 title: Online Library
 date: 2021-10-11
-tags: [Web-APP]
+tags: [Web APP]
 toc:  true
 ---
 Web APP using Django and React
