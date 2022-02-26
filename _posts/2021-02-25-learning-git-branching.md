@@ -53,6 +53,12 @@ git checkout main^
 git checkout main~<num>
 ```
 
+```
+git checkout main^2
+```
+
+If main has two parents, this will go to the second one
+
 ## Reverse Change
 ```
 git reset HEAD~1    // moving a branch reference backwards
@@ -62,7 +68,7 @@ git revert HEAD     // reverse changes and share those changes with others
 
 ## Cherry-pick
 ```
-git cherry-pick <Cimmuit1> <Cimmit2>...
+git cherry-pick <Commit1> <Commit2>...
 ```
 It will copy a series of commits below your current location(HEAD)
 
@@ -73,8 +79,36 @@ git tag v1 C1     // reference the tag v1 to the commit C1
 ```
 git describe <ref>
 ```
-this will output <tag>_<numCommits>_g<hash>   
+this will output \<tag\>_\<numCommits\>_g\<hash\>   
+
 tag is the closest ancestor tag in history   
+
 numCommits is how many commits away that tag is   
+
 hash is the hash of the commit being described    
 
+## Git Remote
+```
+git clone   // clone the whole remote branch
+git fetch   // update the remote commits that are missing locally, but won't change the local state (main branch)
+git pull    // same as git fetch + git merge origin/main
+``` 
+
+```
+git push
+```
+this only works when there is no diverged history.   
+To fix that, we can use several ways:
+```
+git fetch
+git rebase origin/main
+// Same as
+git pull --rebase
+``` 
+
+```
+git fetch
+git merge origin/main
+// Same as
+git pull
+``` 
