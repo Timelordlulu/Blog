@@ -14,7 +14,7 @@ Last updated: September 14, 2024
 Our app collects the following information:
 
 - Your Instagram ID (provided by you)
-- Information about posts you "like" within our app
+- Information about intagram posts you "like"
 - Your Discord account information (provided by you)
 
 ## 2. How We Use Your Information
@@ -52,4 +52,4 @@ We may update this privacy policy from time to time. We will notify you of any c
 
 ## 7. Contact Us
 
-If you have any questions about this privacy policy, please contact us at: [Your Contact Email]
+If you have any questions about this privacy policy, please contact us at: ericlu0601@gmail.com
